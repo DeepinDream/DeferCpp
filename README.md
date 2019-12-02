@@ -8,10 +8,12 @@
 #include <iostream>
 #include "defercpp.h"
 
+using namespace std;
+
 void DeferTest()
 {
-    int count = 1;
-    defer(cout << "Hello World" << endl);
+    defer(cout << "Hello Defer" << endl);
+    cout << "Hello World" << endl;
 }
 
 int main()
